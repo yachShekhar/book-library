@@ -1,0 +1,149 @@
+{
+	"info": {
+		"_postman_id": "ff12bb0e-5800-41b7-846a-ae80627645d1",
+		"name": "book-library",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8010/v1/library/catalogue/list",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8030/book-library/v1/catalogue/list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8030",
+					"path": [
+						"book-library",
+						"v1",
+						"catalogue",
+						"list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8010/v1/library/book/add",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":\"ISBN2\",\n\t\"name\":\"two states\",\n\t\"title\":\"two states\",\n\t\"authors\":[\"Chetan BhAGAT\", \"manish\"],\n\t\"genres\":[\"ROMANCE\"],\n\t\"publisher\":\"Penguin\",\n\t\"authorCountry\":\"INDIA\",\n\t\"soldCount\":200,\n\t\"imageUrl\":\"http://cdn.quotesgram.com/img/68/32/519283232-21413846.jpg\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8030/book-library/v1/book/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8030",
+					"path": [
+						"book-library",
+						"v1",
+						"book",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8010/v1/library/book/add",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"id\":\"ISBN1\",\n\t\n\t\"description\":\"The White Stripes\",\n\t\"title\":\"The White Stripes\",\n\t\"authors\":[\"Chetan BhAGAT\"],\n\t\"genre\":[\"POLITICS\"],\n\t\"publisher\":\"Penguin\",\n\t\"authorCountry\":\"INDIA\",\n\t\"soldCount\":199,\n\t\"imageUrl\":\"http://cdn.quotesgram.com/img/68/32/519283232-21413846.jpg\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8030/book-library/v1/book/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8030",
+					"path": [
+						"book-library",
+						"v1",
+						"book",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8030/book-library/v1/welcome",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8030/book-library/v1/welcome",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8030",
+					"path": [
+						"book-library",
+						"v1",
+						"welcome"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8030/book-library/v1/book/search/",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8030/book-library/v1/book/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8030",
+					"path": [
+						"book-library",
+						"v1",
+						"book",
+						"add"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
